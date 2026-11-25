@@ -3,48 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-/* Consent Mode v2: domyślnie wszystko wyłączone, dopóki użytkownik nie zaakceptuje */
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied'});
-(function(){
-  var KEY='teethq_cookie_consent';
-  function grant(){ gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'}); }
-  var saved=null; try{ saved=localStorage.getItem(KEY); }catch(e){}
-  if(saved==='granted'){ grant(); }
-  if(saved) return;
-  document.addEventListener('DOMContentLoaded', function(){
-    var css=document.createElement('style');
-    css.textContent='#tq-cc{position:fixed;left:16px;right:16px;bottom:16px;max-width:520px;margin:0 auto;background:#F6F7F8;color:#2E3338;border:1px solid #CBD0D5;border-radius:14px;box-shadow:0 8px 30px rgba(46,51,56,.15);padding:18px 20px;font:400 13.5px/1.55 Montserrat,Arial,sans-serif;z-index:99999}#tq-cc p{margin:0 0 14px}#tq-cc .tq-b{display:flex;gap:10px}#tq-cc button{flex:1;cursor:pointer;font:500 13px Montserrat,Arial,sans-serif;padding:11px 14px;border-radius:999px;border:1px solid #2E3338;background:transparent;color:#2E3338}#tq-cc button.tq-y{background:#2E3338;color:#F6F7F8}';
-    document.head.appendChild(css);
-    var box=document.createElement('div'); box.id='tq-cc'; box.setAttribute('role','dialog'); box.setAttribute('aria-label','Pliki cookie');
-    box.innerHTML='<p>Używamy plików cookie, aby mierzyć skuteczność reklam i ulepszać stronę. Możesz je zaakceptować lub odrzucić &mdash; strona działa tak samo w obu przypadkach.</p><div class="tq-b"><button type="button" class="tq-n">Odrzucam</button><button type="button" class="tq-y">Akceptuję</button></div>';
-    document.body.appendChild(box);
-    function done(v){ try{ localStorage.setItem(KEY,v); }catch(e){} if(v==='granted') grant(); box.remove(); }
-    box.querySelector('.tq-y').addEventListener('click',function(){done('granted');});
-    box.querySelector('.tq-n').addEventListener('click',function(){done('denied');});
-  });
-})();
-</script>
-<meta name="description" content="Kosmetyczne wybielanie zębów w Gdańsku. Efekt po 1 wizycie, ok. 45 minut, bez bólu. Ponad 1500 klientów, 5,0 ★ w Booksy. Zarezerwuj online 24/7.">
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18161115945"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-18161115945');
-document.addEventListener('click', function (e) {
-  var a = e.target.closest && e.target.closest('a[href]');
-  if (!a) return;
-  var href = a.getAttribute('href') || '';
-  if (href.indexOf('booksy.com') !== -1) {
-    gtag('event', 'conversion', {'send_to': 'AW-18161115945/pQqWCK3Dob4dEKnG8tND'});
-  } else if (href.indexOf('tel:') === 0) {
-    gtag('event', 'tel_click', {'event_category': 'contact'});
-  }
-}, true);
-</script>
 <title>TEETHQ — Gdańsk</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -430,6 +388,25 @@ h1[data-i18n].active, h2[data-i18n].active, p[data-i18n].active, dd[data-i18n].a
 .addon-name[data-i18n].active{display:inline}
 span[data-i18n].active{display:inline}
 </style>
+<meta name="description" content="Kosmetyczne wybielanie zębów w Gdańsku. Efekt po 1 wizycie, ok. 45 minut, bez bólu. Ponad 1500 klientów, 5,0 ★ w Booksy. Zarezerwuj online 24/7.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18161115945"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18161115945');
+gtag('config', 'G-VV30RSTR1E');
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href]');
+  if (!a) return;
+  var href = a.getAttribute('href') || '';
+  if (href.indexOf('booksy.com') !== -1) {
+    gtag('event', 'conversion', {'send_to': 'AW-18161115945/pQqWCK3Dob4dEKnG8tND'});
+  } else if (href.indexOf('tel:') === 0) {
+    gtag('event', 'tel_click', {'event_category': 'contact'});
+  }
+}, true);
+</script>
 </head>
 <body>
 <header>
